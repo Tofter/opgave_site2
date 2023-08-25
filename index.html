@@ -5,87 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/2ade7a8a93.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="body">
     <div id="wrapper">
-        <nav>
+        <nav class="nav">
 
-            <div>
+            <div class="nav__menu">
                 <i class="fa-solid fa-bars"></i>
                 <a href="">menu</a>
-                <i class="fa-solid fa-magnifying-glass"><input type="text" placeholder="search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div><img src="https://via.placeholder.com/200x200" alt="123"></div>
-            <div>
+            <div class="nav__img"><img src="https://via.placeholder.com/700x60" alt="123"></div>
+            <div class="nav__login">
                 <a href="">log ind</a>
             </div>
-            <ul>
-                <li><a href="">Nyheder</a></li>
-                <li><a href=""></a>Podcast</li>
-                <li><a href=""></a>Køb abonnement</li>
+
+            <ul class="nav__list">
+                <li class="nav__items"><a class="nav__links" href="">Nyheder</a></li>
+                <li class="nav__items"><a class="nav__links" href=""></a>Podcast</li>
+                <li class="nav__items"><a class="nav__links" href=""></a>Køb abonnement</li>
             </ul>
         </nav>
-        <main>
+        <main id="main">
+            <div class="annonce"><img class="annonce__img" src="https://via.placeholder.com/900x80" alt="">
+                <p class="annonce__text">Annonce</p>
+            </div>
 
-            <article>
-                <p><span>Abbonement</span> læsetid 7 min</p>
-                <h1>Gas er et godt politisk våben. Det er bare ikke putin, der bruger det</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium et velit explicabo in
-                    praesentium quibusdam corrupti accusamus quidem repellat. Voluptas obcaecati tempora dolorem
-                    cupiditate quia culpa architecto pariatur exercitationem?</p>
+            <article class="putin">
+                <p class="putin__small"><span class="putin__red">Abbonement</span> læsetid 7
+                    min</p>
+                <div class="putin__group"><!-- ændring  -->
 
-                <figure><img src="" alt="123">
-                    <figcaption>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio molestiae <span>error
+                    <h1 class="putin__heading">Gas er et godt politisk våben. Det er bare ikke putin, der bruger det
+                    </h1>
+                    <p class="putin__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium
+                        et velit explicabo in
+                        praesentium quibusdam corrupti accusamus quidem repellat. Voluptas obcaecati tempora dolorem
+                        cupiditate quia culpa architecto pariatur exercitationem?</p>
+                </div>
+
+                <figure class="putin__figure"><img class="putin__img" src="https://via.placeholder.com/300x200"
+                        alt="123">
+                    <figcaption class="putin__figcap">
+                        <p class="putin__figcapText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio
+                            molestiae <span>error
                                 aspernatur, eius quod?</span></p>
                     </figcaption>
                 </figure>
 
             </article>
             <article>
-                <div>
-                    <p><span>Udland</span></p>
-                    <p>7.maj 2018</p>
-                    <p>kommentarer (<span>2</span>)</p>
+                <div class="socials__head">
+                    <p class="socials__headOne"><span>Udland</span></p>
+                    <p class="socials__headTwo">7.maj 2018</p>
+                    <p class="socials__headThree">kommentarer (<span>2</span>)</p>
                 </div>
-                <div>
-                    <div>
-                        <p>Jakob Stein</p>
-                        <img src="" alt="123">
-                        <p>Email</p>
-                        <p>Twitter</p>
-                    </div>
-                    <div>
-                        <p>Peter Nygaard Christensen</p>
-                        <p>Email</p>
-                    </div>
+                <div class="socials">
 
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quidem fugiat earum? Inventore
-                            earum modi dolorem excepturi hic fugiat voluptates, eum optio. Magni fugit beatae dolores
-                            voluptas veritatis ex reiciendis!</p>
-                    </div>
-                    <div>
-                        <div><i class="fa-brands fa-square-facebook"></i>
-                            <p>del</p>
+                    <div class="socials__group">
+                        <div class="socials__jakob">
+                            <p>Jakob Stein</p>
+                            <img src="" alt="123">
+                            <p>Email</p>
+                            <p>Twitter</p>
+                            <p>Peter Nygaard Christensen</p>
+                            <p>Email</p>
                         </div>
-                        <div><i class="fa-brands fa-twitter"></i>
-                            <p>tweet</p>
-                        </div>
-                        <div><i class="fa-solid fa-at"></i>
-                            <p>email</p>
+
+                        <div class="socials__text">
+                            <div class="socials__socials">
+                                <div class="facebook"><i class="fa-brands fa-square-facebook"></i>
+                                    <p>del</p>
+                                </div>
+                                <div class="twitter"><i class="fa-brands fa-twitter"></i>
+                                    <p>tweet</p>
+                                </div>
+                                <div class="email"><i class="fa-solid fa-at"></i>
+                                    <p>email</p>
+                                </div>
+                                <p class="socials__text--p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Vero
+                                    quidem fugiat earum? Inventore
+                                    earum modi dolorem excepturi hic fugiat voluptates, eum optio. Magni fugit beatae
+                                    dolores
+                                    voluptas veritatis ex reiciendis! dolorem excepturi hic fugiat voluptates, eum optio. Magni fugit beatae
+                                    dolores
+                                    voluptas veritatis ex reiciendis!</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="socials__end">
                     <h2>Vores abonnenter kalder os kritisk, seriøs og troværdig. se om du er enig...</h2>
                     <a href="">klik her</a>
                     <p>Allederede abonnent? <a href="">log ind er</a></p>
                 </div>
+
             </article>
-            <section>
-                <div>
+            <section class="information">
+                <div class="information__">
                     <div>
                         <h3>Fik du læst?</h3>
                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -182,7 +204,8 @@
                 <div>
                     <div>
                         <p>Henrik holm hansen</p>
-                       <time datetime="2018-05-07 05:56"></time> <p>07.maj. 2018. 05:56</p>
+                        <time datetime="2018-05-07 05:56"></time>
+                        <p>07.maj. 2018. 05:56</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, totam. Dignissimos, aliquam
                             eum recusandae odio ad laboriosam provident ullam accusamus molestiae! Placeat, explicabo
                             impedit enim nostrum beatae temporibus, soluta, nam aspernatur aliquam molestiae <span>nemo
@@ -190,7 +213,8 @@
                     </div>
                     <div>
                         <p>Gert Romme</p>
-                       <time datetime="2018-05-07 17:08"></time> <p>07.maj. 2018. 17:08</p>
+                        <time datetime="2018-05-07 17:08"></time>
+                        <p>07.maj. 2018. 17:08</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, totam. Dignissimos, aliquam
                             eum recusandae odio ad laboriosam provident ullam accusamus molestiae! Placeat, explicabo
                             impedit enim nostrum beatae temporibus, soluta, nam aspernatur aliquam molestiae <span>nemo
