@@ -24,7 +24,8 @@ img {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin-top: 1.2em;
-
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
 
 .nav__login {
@@ -37,15 +38,17 @@ img {
     grid-column: 2;
     margin: 4em;
     font-size: 0.7em;
-    /* border-bottom: 1px solid black; */
 }
 
-.nav__links {
+.nav__menu{
+   display: flex;
+   gap: 0.7em;
+}
+
+.menu__gap, .nav__links, .nav__items, .login__color{
     text-decoration: none;
-}
-
-.nav__items {
     list-style: none;
+    color: black;
 }
 
 .annonce {
@@ -67,7 +70,7 @@ img {
 .putin {
     width: 50%;
     margin: 0 auto;
-
+padding-top: 3em;
 }
 
 .putin__group {
@@ -83,12 +86,16 @@ img {
 
 .putin__small {
     padding-top: 0.5em;
-    padding-right: 10.5em;
+    padding-right: 17.5em;
     text-align: center;
     padding-bottom: 0.5em;
     font-size: 0.7em;
 }
 
+.putin__red {
+    color: red;
+    font-weight: 700;
+}
 .putin__text {
     grid-column: 2 / 5;
     grid-row: 2;
@@ -98,16 +105,9 @@ img {
 
 }
 
-.putin__red {
-    color: red;
-    font-weight: 700;
-}
-
 .putin__figure {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* display: flex;
-    flex-direction: row-reverse; */
 }
 
 .putin__img {
@@ -152,23 +152,17 @@ img {
    display: flex;
 }
 
+
 .facebook,
 .twitter,
 .email {
     display: flex;
     float: right;
     grid-column: 4 / 5;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     text-transform: uppercase;
-    gap: 0.2em;
-}
-
-.socials__jakob{
+    gap: 1em;
     font-size: 0.7em;
-    padding-right: 1em;
-}
-
-.socials__text--p{
 }
 
 .facebook {
@@ -182,3 +176,43 @@ img {
 .email {
     background-color: #9d9797;
 }
+
+.socials__jakob{
+    font-size: 0.7em;
+    padding-right: 1em;
+}
+
+.socials__text--p{
+}
+
+.socials__end{
+    margin-bottom: 5em;
+    text-align: center;
+}
+.end__heading{
+    margin: 1em 14.3em;
+}
+
+.end__button{
+    margin-bottom: 1.5em;
+    padding: 1em 7em;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.end__button--text{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.end__abonnent{
+    opacity: 0.5;
+}
+
+.information{
+   
+}
+
